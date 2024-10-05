@@ -2,18 +2,21 @@ package net.ensah.Builder;
 
 public class Person {
 
-    private String userId;
-    private String firstName;
-    private String lastName;
-    private String email;
-    private String password;
+    private  String userId;
+    private  String firstName;
+    private  String lastName;
+    private  String email;
+    private  String password;
 
-    private Person(PersonBuilder builder) {
-        this.userId = builder.userId;
-        this.firstName = builder.firstName;
-        this.lastName = builder.lastName;
-        this.email = builder.email;
-        this.password = builder.password;
+    public Person(String userId, String firstName, String lastName, String email, String password) {
+        this.userId = userId;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.password = password;
+    }
+
+    public Person() {
     }
 
     @Override
@@ -27,50 +30,40 @@ public class Person {
                 '}';
     }
 
-    public static PersonBuilder Builder() {
+    public static PersonBuilder Builder(){
         return new PersonBuilder();
     }
 
-    public static class PersonBuilder {
-        private String userId;
-        private String firstName;
-        private String lastName;
-        private String email;
-        private String password;
+    public static class PersonBuilder{
+        private final Person person = new Person();
 
-        // Constructeur privé pour forcer l'utilisation du Builder
-        private PersonBuilder() {
-        }
-
-        // Méthodes de chaînage pour définir les attributs
-        public PersonBuilder userId(String userId) {
-            this.userId = userId;
+        public PersonBuilder firstName(String firstName){
+            person.firstName=firstName;
             return this;
         }
 
-        public PersonBuilder firstName(String firstName) {
-            this.firstName = firstName;
+        public PersonBuilder lastName(String lastName){
+            person.lastName=lastName;
             return this;
         }
 
-        public PersonBuilder lastName(String lastName) {
-            this.lastName = lastName;
+        public PersonBuilder email(String email){
+            person.email=email;
             return this;
         }
 
-        public PersonBuilder email(String email) {
-            this.email = email;
+        public PersonBuilder password(String password){
+            person.password=password;
             return this;
         }
 
-        public PersonBuilder password(String password) {
-            this.password = password;
+        public PersonBuilder userId(String userId){
+            person.userId=userId;
             return this;
         }
 
-        // Méthode pour construire l'objet Person
-        public Person build() {
-            return new Person(this);
+        public Person build(){
+            return this.person;
         }
     }
-}
+    }
