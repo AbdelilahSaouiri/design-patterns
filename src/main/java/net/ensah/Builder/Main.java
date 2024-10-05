@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Person person= Person.Builder()
+        Person person= Director.personBuilder()
                 .firstName("abdelilah")
                 .lastName("saouiri")
                 .email("abdelilah@gmail.com")

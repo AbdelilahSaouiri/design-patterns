@@ -30,9 +30,7 @@ public class Person {
                 '}';
     }
 
-    public static PersonBuilder Builder(){
-        return new PersonBuilder();
-    }
+
 
     public static class PersonBuilder{
         private final Person person = new Person();
