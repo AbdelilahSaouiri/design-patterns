@@ -1,4 +1,4 @@
-package net.ensah.strategy;
+package net.ensah.Creational.strategy;
 
 public class Main {
 

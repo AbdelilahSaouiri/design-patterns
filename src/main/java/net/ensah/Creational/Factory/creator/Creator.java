@@ -1,6 +1,6 @@
-package net.ensah.FactoryMethod.creator;
+package net.ensah.Creational.Factory.creator;
 
-import net.ensah.FactoryMethod.IProduct;
+import net.ensah.Creational.Factory.IProduct;
 
 public  abstract class Creator {
 

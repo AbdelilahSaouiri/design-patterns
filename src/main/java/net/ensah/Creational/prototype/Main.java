@@ -1,4 +1,4 @@
-package net.ensah.prototype;
+package net.ensah.Creational.prototype;
 
 import java.util.UUID;
 

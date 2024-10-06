@@ -1,4 +1,4 @@
-package net.ensah.Singleton;
+package net.ensah.Creational.Singleton;
 
 public class Person {
 

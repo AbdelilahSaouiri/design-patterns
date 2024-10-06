@@ -1,4 +1,4 @@
-package net.ensah.prototype;
+package net.ensah.Creational.prototype;
 
 public class Person implements  Cloneable{
 

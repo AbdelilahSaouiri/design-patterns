@@ -1,4 +1,4 @@
-package net.ensah.FactoryMethod;
+package net.ensah.Creational.Factory;
 
 public class ComputerImpl implements IProduct {
 

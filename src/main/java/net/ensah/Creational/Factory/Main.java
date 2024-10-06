@@ -1,8 +1,8 @@
-package net.ensah.FactoryMethod;
+package net.ensah.Creational.Factory;
 
-import net.ensah.FactoryMethod.Factories.ComputerFactory;
-import net.ensah.FactoryMethod.Factories.PhoneFactory;
-import net.ensah.FactoryMethod.creator.Creator;
+import net.ensah.Creational.Factory.Factories.ComputerFactory;
+import net.ensah.Creational.Factory.Factories.PhoneFactory;
+import net.ensah.Creational.Factory.creator.Creator;
 
 public class Main {
 
