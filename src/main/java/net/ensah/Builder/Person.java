@@ -31,7 +31,6 @@ public class Person {
     }
 
 
-
     public static class PersonBuilder{
         private final Person person = new Person();
 
